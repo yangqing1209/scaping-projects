@@ -116,7 +116,6 @@ class Kr36Scraping:
         return time_str
 
     def save_data(self, dic):
-        global total
         self.total += 1
         self.videos.insert_one(dic)
         print(f"插入第{self.total}条成功")
